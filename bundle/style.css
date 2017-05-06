@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    color: white;
+}
+
+div {
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    border: 0;
+    font-size: 18pt;
+    width: 100%;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    color: #333333;
+}
+input:focus {
+    border-bottom: 2px solid #007769;
+}
+
+h3 {
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0;
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding-top: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.cancel, .save {
+    float: left;
+    display: inline;
+    text-align: center;
+    height: 100%;
+}
+
+.cancel {
+    width: 60px;
+    height: 100%;
+    float: left;
+}
+
+.save {
+    width: 80px;
+    float: right;
+    font-size: 11pt;
+}
+
+.list-element {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    height: 40px;
+    margin: 0;
+}
+.title {
+    box-shadow: 0 0 2px 1px #888;
+    color: white;
+    background-color: #007769;
+    height: 60px;
+}
+
+.todo {
+    padding: 20px;
+    height: 60px;
+    color: #333333;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
+
+.input-wrap {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.add-todo-button {
+    border-radius: 100%;
+    background-color: #007769;
+    font-family: 'Material Icons';
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    bottom:30px;
+    right: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px 0 #888888;
+    cursor: pointer;
+}
