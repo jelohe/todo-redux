@@ -10,26 +10,20 @@ function reducer(state, action) {
         {
           id: action.id,
           text: action.text,
+          completed: false,
         },
       ];
       break;
     }
 
     case Action.REMOVE_TODO: {
-      newState = state.filter(todo => todo.id === action.id);
+      newState = state.filter(todo => todo.id !== action.id);
       break;
     }
 
     case Action.TOGGLE_TODO: {
-      newState = state.map((todo) => {
-        if (todo.id === action.id) {
-          return Object.assign({}, todo, {
-            completed: !todo.completed,
-          });
-        }
-
-        return todo;
-      });
+      newState = state.filter(todo => todo.id === action.id)
+        .map(todo => Object.assign({}, todo, { completed: !todo.completed }));
       break;
     }
 
