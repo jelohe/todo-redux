@@ -5,8 +5,10 @@
   "author": "txus",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-jest": "^20.0.1",
     "babel-loader": "^6.4.1",
-    "babel-preset-es2017": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
@@ -14,11 +16,11 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
+    "jest": "^20.0.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
-    "babel-core": "^6.24.0",
     "history": "^4.6.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -29,6 +31,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --hot --content-base ./bundle/ --open"
+    "start": "webpack-dev-server --hot --content-base ./bundle/ --open",
+    "test": "jest",
+    "test:watch": "yarn test -- --watch"
   }
 }

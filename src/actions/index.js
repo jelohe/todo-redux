@@ -7,8 +7,10 @@ export const Action = {
 };
 
 function increaseId() {
+  const currentTodoId = nextTodoId;
   nextTodoId += 1;
-  return nextTodoId;
+
+  return currentTodoId;
 }
 
 export const addTodo = text => ({
